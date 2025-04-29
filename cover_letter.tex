@@ -1,0 +1,104 @@
+\documentclass[11pt, a4paper]{article}
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}     % Input encoding
+\usepackage[T1]{fontenc}        % Font encoding (essential for correct output of certain chars)
+\usepackage{lmodern}            % Use Latin Modern fonts (nicer than default Computer Modern)
+\usepackage{geometry}           % For setting margins
+\usepackage{parskip}            % Use vertical space between paragraphs instead of indentation
+\usepackage[hidelinks]{hyperref} % For clickable links (email, etc.). 'hidelinks' removes boxes/colors.
+\usepackage{url}                % Nicer URL formatting (used by hyperref)
+\usepackage{microtype}          % Improves typography (justification, spacing, character protrusion)
+
+%----------------------------------------------------------------------------------------
+%   PAGE STYLE & GEOMETRY
+%----------------------------------------------------------------------------------------
+\geometry{a4paper, margin=1in}  % Set 1-inch margins on A4 paper
+\pagestyle{empty}               % No page numbers
+
+% Optional: Use the same style for URLs as the surrounding text
+% \urlstyle{same}
+
+%----------------------------------------------------------------------------------------
+%   DOCUMENT START
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   HEADER: Your Name and Contact Information
+%   Using \hfill to push contact info to the right margin.
+%----------------------------------------------------------------------------------------
+\noindent % Prevent indentation
+{\Huge\bfseries Man Yan CHAN} % Your Name
+\hfill % Pushes the following content to the right
+\begin{minipage}[t]{0.5\linewidth} % Minipage to contain the right-aligned block
+    \raggedleft % Right-align text within this minipage
+    \href{mailto:richard.mychan@gmail.com}{richard.mychan@gmail.com} \\
+    +852 56924792 \\
+    % Add LinkedIn/Website links here if desired, e.g.:
+    % \href{https://www.linkedin.com/in/richard-chanmy}{linkedin.com/in/richard-chanmy} \\
+    % \href{https://manyan-chan.github.io}{manyan-chan.github.io}
+\end{minipage}
+
+\vspace{2\baselineskip} % Add some space after the header block
+
+%----------------------------------------------------------------------------------------
+%   DATE
+%----------------------------------------------------------------------------------------
+\noindent % Prevent indentation
+% [Date: Month Day, Year] % <<<--- REPLACE THIS WITH THE ACTUAL DATE (e.g., May 28, 2024)
+% Or use \today for the compilation date: \noindent\today
+
+\bigskipamount=1.5em % Slightly increase default \bigskip space if desired
+\bigskip % Standard vertical space
+
+%----------------------------------------------------------------------------------------
+%   RECIPIENT ADDRESS (Add if known)
+%----------------------------------------------------------------------------------------
+% \noindent % Prevent indentation
+% [Hiring Manager Name, Title] \\ % <<<--- REPLACE OR REMOVE
+% [Company Name] \\               % <<<--- REPLACE OR REMOVE
+% [Company Street Address] \\     % <<<--- REPLACE OR REMOVE
+% [Company City, Postal Code]     % <<<--- REPLACE OR REMOVE
+%
+% \bigskip % Add space after recipient address if used
+
+%----------------------------------------------------------------------------------------
+%   SALUTATION
+%----------------------------------------------------------------------------------------
+\noindent Dear Hiring Manager, % Or "Dear [Mr./Ms./Mx. Last Name]," if known
+
+\medskip % Standard smaller vertical space after salutation
+
+%----------------------------------------------------------------------------------------
+%   LETTER BODY (Your content remains unchanged)
+%----------------------------------------------------------------------------------------
+I am writing to express my strong interest in contributing my skills as a results-driven Software Engineer to your esteemed organization. With over three years of dedicated experience in developing and optimizing software solutions within the dynamic financial sector, I possess a proven track record of delivering high-quality, scalable code that significantly enhances operational performance and addresses complex business challenges.
+
+My background, combining a BBA in Information Systems and Computer Science from The University of Hong Kong, provides a unique perspective, enabling me to seamlessly bridge the gap between intricate technical requirements and core business objectives. I am highly proficient in Python and its data science ecosystem (Pandas, NumPy, Matplotlib), alongside SQL and JavaScript, applying these skills across the full development lifecycle. My experience spans critical areas within finance, including developing and maintaining FIX protocol interfaces for electronic trading in equities derivatives, creating optimized ETL workflows for treasury functions, and building robust backtesting frameworks and real-time dashboards for quantitative strategies.
+
+Throughout my roles at leading financial institutions like Barclays and HSBC, as well as in a dynamic FinTech environment at NineBarrack, I have consistently focused on tangible results. I have successfully collaborated with cross-functional teams, including sales and trading desks, to enhance electronic trading capabilities and competitiveness. My work has involved streamlining processes through automation, reducing data processing times significantly, and leveraging modern web technologies (Dash, Flask, ReactJS, SocketIO) and cloud platforms (AWS EC2) to deliver interactive applications and ensure system reliability. Furthermore, my commitment to quality is underscored by my experience in developing comprehensive test strategies (SIT/UAT) and utilizing CI/CD practices (TeamCity, Jenkins, Git).
+
+My strong understanding of financial markets, encompassing Equities, FICC, and Derivatives, complements my technical expertise. I am adept at transforming complex financial logic into robust software solutions and thrive in fast-paced environments that demand innovation, collaboration, and a relentless focus on efficiency and performance. My extensive list of certifications further attests to my commitment to continuous learning and professional development within both technology and finance.
+
+I am confident that my technical skills, financial domain knowledge, and proactive approach align well with the requirements of challenging software engineering roles. I am eager to leverage my experience to contribute to your team's success. Thank you for considering my application. My resume, providing further detail on my qualifications and accomplishments, is attached for your review. I look forward to the possibility of discussing how I can add value to your organization.
+
+%----------------------------------------------------------------------------------------
+%   CLOSING
+%----------------------------------------------------------------------------------------
+\medskip % Add a little space before the closing
+\noindent Sincerely,
+
+\vspace{3\baselineskip} % Space for signature (adjust height as needed)
+
+%----------------------------------------------------------------------------------------
+%   SIGNATURE NAME
+%----------------------------------------------------------------------------------------
+\noindent Man Yan Chan
+
+%----------------------------------------------------------------------------------------
+%   DOCUMENT END
+%----------------------------------------------------------------------------------------
+\end{document}
