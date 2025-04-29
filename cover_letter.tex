@@ -1,25 +1,37 @@
-\documentclass[11pt, a4paper]{article}
+\documentclass[11pt, a4paper]{article} % Changed back to 11pt
 
 %----------------------------------------------------------------------------------------
 %   PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage[utf8]{inputenc}     % Input encoding
-\usepackage[T1]{fontenc}        % Font encoding (essential for correct output of certain chars)
-\usepackage{lmodern}            % Use Latin Modern fonts (nicer than default Computer Modern)
+\usepackage[T1]{fontenc}        % Font encoding
+\usepackage{lmodern}            % Use Latin Modern fonts (RECOMMEND ADDING TO RESUME TOO)
 \usepackage{geometry}           % For setting margins
-\usepackage{parskip}            % Use vertical space between paragraphs instead of indentation
-\usepackage[hidelinks]{hyperref} % For clickable links (email, etc.). 'hidelinks' removes boxes/colors.
-\usepackage{url}                % Nicer URL formatting (used by hyperref)
-\usepackage{microtype}          % Improves typography (justification, spacing, character protrusion)
+\usepackage{parskip}            % Use vertical space between paragraphs (Kept for letter style)
+\usepackage{url}                % Nicer URL formatting
+\usepackage{hyperref}           % For clickable links - Load relatively late
+\usepackage{microtype}          % Improves typography
+\usepackage{textcomp}           % Added for potential symbols (like ® if needed)
 
 %----------------------------------------------------------------------------------------
 %   PAGE STYLE & GEOMETRY
 %----------------------------------------------------------------------------------------
-\geometry{a4paper, margin=1in}  % Set 1-inch margins on A4 paper
+% USE SAME MARGINS AS RESUME (Even with different font size, this keeps the frame consistent)
+\geometry{left=0.75in, right=0.75in, top=0.6in, bottom=0.6in}
 \pagestyle{empty}               % No page numbers
 
-% Optional: Use the same style for URLs as the surrounding text
-% \urlstyle{same}
+%----------------------------------------------------------------------------------------
+%   HYPERLINK SETUP (Copied from Resume)
+%----------------------------------------------------------------------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Man Yan Chan Cover Letter}, % Optional: Add PDF metadata
+    pdfauthor={Man Yan Chan}        % Optional: Add PDF metadata
+}
+% \urlstyle{same} % Optional: uncomment if you want URLs to be black like text
 
 %----------------------------------------------------------------------------------------
 %   DOCUMENT START
@@ -27,37 +39,28 @@
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%   HEADER: Your Name and Contact Information
-%   Using \hfill to push contact info to the right margin.
+%   HEADER: Your Name and Contact Information (MATCHING RESUME STYLE)
 %----------------------------------------------------------------------------------------
-\noindent % Prevent indentation
-{\Huge\bfseries Man Yan CHAN} % Your Name
-\hfill % Pushes the following content to the right
-\begin{minipage}[t]{0.5\linewidth} % Minipage to contain the right-aligned block
-    \raggedleft % Right-align text within this minipage
-    \href{mailto:richard.mychan@gmail.com}{richard.mychan@gmail.com} \\
-    +852 56924792 \\
-    % Add LinkedIn/Website links here if desired, e.g.:
-    % \href{https://www.linkedin.com/in/richard-chanmy}{linkedin.com/in/richard-chanmy} \\
-    % \href{https://manyan-chan.github.io}{manyan-chan.github.io}
-\end{minipage}
-
-\vspace{2\baselineskip} % Add some space after the header block
+\begin{center} % Center the whole header block
+    {\Huge\bfseries Man Yan CHAN} \\ \vspace{1.5mm} % Name (same style as resume)
+    % Centered contact info line (same as resume)
+    Eastern District, Hong Kong \quad|\quad +852 56924792 \quad|\quad \href{mailto:richard.mychan@gmail.com}{richard.mychan@gmail.com} \\
+    % Add optional centered links line if desired (matching resume possibility)
+    % \href{https://www.linkedin.com/in/richard-chanmy}{LinkedIn} \quad|\quad \href{https://github.com/manyan-chan}{Github} \quad|\quad \href{https://manyan-chan.github.io}{Portfolio}
+\end{center}
+\vspace{2ex} % Adjust space after header (using relative unit)
 
 %----------------------------------------------------------------------------------------
 %   DATE
 %----------------------------------------------------------------------------------------
-\noindent % Prevent indentation
-% [Date: Month Day, Year] % <<<--- REPLACE THIS WITH THE ACTUAL DATE (e.g., May 28, 2024)
-% Or use \today for the compilation date: \noindent\today
+% \noindent % No longer needed before Date if using parskip
+% \today % Or specific date: May 28, 2024
 
-\bigskipamount=1.5em % Slightly increase default \bigskip space if desired
-\bigskip % Standard vertical space
+\bigskip % Standard vertical space (parskip handles space before this)
 
 %----------------------------------------------------------------------------------------
 %   RECIPIENT ADDRESS (Add if known)
 %----------------------------------------------------------------------------------------
-% \noindent % Prevent indentation
 % [Hiring Manager Name, Title] \\ % <<<--- REPLACE OR REMOVE
 % [Company Name] \\               % <<<--- REPLACE OR REMOVE
 % [Company Street Address] \\     % <<<--- REPLACE OR REMOVE
@@ -68,12 +71,15 @@
 %----------------------------------------------------------------------------------------
 %   SALUTATION
 %----------------------------------------------------------------------------------------
-\noindent Dear Hiring Manager, % Or "Dear [Mr./Ms./Mx. Last Name]," if known
+% \noindent % No longer needed before Salutation if using parskip
+Dear Hiring Manager, % Or "Dear [Mr./Ms./Mx. Last Name]," if known
 
-\medskip % Standard smaller vertical space after salutation
+\medskip % Standard smaller vertical space after salutation (parskip handles space before)
 
 %----------------------------------------------------------------------------------------
 %   LETTER BODY (Your content remains unchanged)
+%   Paragraphs will have vertical space between them due to 'parskip'.
+%   No indentation needed. Font size is now 11pt.
 %----------------------------------------------------------------------------------------
 I am writing to express my strong interest in contributing my skills as a results-driven Software Engineer to your esteemed organization. With over three years of dedicated experience in developing and optimizing software solutions within the dynamic financial sector, I possess a proven track record of delivering high-quality, scalable code that significantly enhances operational performance and addresses complex business challenges.
 
@@ -89,14 +95,14 @@ I am confident that my technical skills, financial domain knowledge, and proacti
 %   CLOSING
 %----------------------------------------------------------------------------------------
 \medskip % Add a little space before the closing
-\noindent Sincerely,
+Sincerely,
 
 \vspace{3\baselineskip} % Space for signature (adjust height as needed)
 
 %----------------------------------------------------------------------------------------
 %   SIGNATURE NAME
 %----------------------------------------------------------------------------------------
-\noindent Man Yan Chan
+Man Yan Chan % \noindent is not needed here due to parskip
 
 %----------------------------------------------------------------------------------------
 %   DOCUMENT END
