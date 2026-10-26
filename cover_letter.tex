@@ -1,108 +1,85 @@
-\documentclass[11pt, a4paper]{article} % Changed back to 11pt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Universal Professional Cover Letter
+% LaTeX Template
+% Optimized for FinTech, Banks, and Hedge Funds
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%   PACKAGES
-%----------------------------------------------------------------------------------------
-\usepackage[utf8]{inputenc}     % Input encoding
-\usepackage[T1]{fontenc}        % Font encoding
-\usepackage{lmodern}            % Use Latin Modern fonts (RECOMMEND ADDING TO RESUME TOO)
-\usepackage{geometry}           % For setting margins
-\usepackage{parskip}            % Use vertical space between paragraphs (Kept for letter style)
-\usepackage{url}                % Nicer URL formatting
-\usepackage{hyperref}           % For clickable links - Load relatively late
-\usepackage{microtype}          % Improves typography
-\usepackage{textcomp}           % Added for potential symbols (like ® if needed)
+\documentclass[10pt,a4paper]{article}
 
-%----------------------------------------------------------------------------------------
-%   PAGE STYLE & GEOMETRY
-%----------------------------------------------------------------------------------------
-% USE SAME MARGINS AS RESUME (Even with different font size, this keeps the frame consistent)
-\geometry{left=0.75in, right=0.75in, top=0.6in, bottom=0.6in}
-\pagestyle{empty}               % No page numbers
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
 
-%----------------------------------------------------------------------------------------
-%   HYPERLINK SETUP (Copied from Resume)
-%----------------------------------------------------------------------------------------
+\usepackage[left=0.8in, right=0.8in, top=0.7in, bottom=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\pagestyle{empty}
+
+% --- ATS & AI Scanner Optimized PDF Metadata ---
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={Man Yan Chan Cover Letter}, % Optional: Add PDF metadata
-    pdfauthor={Man Yan Chan}        % Optional: Add PDF metadata
+    pdftitle={Man Yan Chan - Cover Letter},
+    pdfauthor={Man Yan Chan},
+    pdfsubject={Software Engineering, Financial Technology, and Trading Support},
+    pdfkeywords={Python, FIX Protocol, ION Platform, Quantitative Development, FinTech, Software Engineer}
 }
-% \urlstyle{same} % Optional: uncomment if you want URLs to be black like text
 
-%----------------------------------------------------------------------------------------
-%   DOCUMENT START
-%----------------------------------------------------------------------------------------
+\setlist[itemize]{leftmargin=*, nosep, topsep=0.5ex, itemsep=0.3ex}
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%   HEADER: Your Name and Contact Information (MATCHING RESUME STYLE)
+%	HEADER SECTION
 %----------------------------------------------------------------------------------------
-\begin{center} % Center the whole header block
-    {\Huge\bfseries Man Yan CHAN} \\ \vspace{1.5mm} % Name (same style as resume)
-    % Centered contact info line (same as resume)
-    Eastern District, Hong Kong \quad|\quad +852 56924792 \quad|\quad \href{mailto:richard.mychan@gmail.com}{richard.mychan@gmail.com} \\
-    % Add optional centered links line if desired (matching resume possibility)
-    % \href{https://www.linkedin.com/in/richard-chanmy}{LinkedIn} \quad|\quad \href{https://github.com/manyan-chan}{Github} \quad|\quad \href{https://manyan-chan.github.io}{Portfolio}
+
+\begin{center}
+    {\Huge\bfseries Man Yan CHAN} \\ \vspace{1.5mm}
+    Eastern District, Hong Kong \quad|\quad +852 56924792 \quad|\quad \href{mailto:richard.mychan@gmail.com}{richard.mychan@gmail.com} \\ \vspace{1mm}
+    \href{https://github.com/manyan-chan}{GitHub} \quad|\quad \href{https://www.linkedin.com/in/richard-chanmy}{LinkedIn} \quad|\quad \href{https://manyan-chan.github.io}{Portfolio}
 \end{center}
-\vspace{2ex} % Adjust space after header (using relative unit)
+
+\vspace{4ex}
 
 %----------------------------------------------------------------------------------------
-%   DATE
+%	DATE & RECIPIENT
 %----------------------------------------------------------------------------------------
-% \noindent % No longer needed before Date if using parskip
-% \today % Or specific date: August 26, 2026
 
-\bigskip % Standard vertical space (parskip handles space before this)
+\noindent
+\today
 
-%----------------------------------------------------------------------------------------
-%   RECIPIENT ADDRESS (Add if known)
-%----------------------------------------------------------------------------------------
-% [Hiring Manager Name, Title] \\ % <<<--- REPLACE OR REMOVE
-% [Company Name] \\               % <<<--- REPLACE OR REMOVE
-% [Company Street Address] \\     % <<<--- REPLACE OR REMOVE
-% [Company City, Postal Code]     % <<<--- REPLACE OR REMOVE
-%
-% \bigskip % Add space after recipient address if used
+\vspace{3ex}
+
+\noindent
+Dear Hiring Manager,
+
+\vspace{2ex}
 
 %----------------------------------------------------------------------------------------
-%   SALUTATION
+%	BODY OF THE COVER LETTER
 %----------------------------------------------------------------------------------------
-% \noindent % No longer needed before Salutation if using parskip
-Dear Hiring Manager, % Or "Dear [Mr./Ms./Mx. Last Name]," if known
 
-\medskip % Standard smaller vertical space after salutation (parskip handles space before)
+\noindent
+I am writing to express my strong interest in software engineering, quantitative development, and front-office trading support roles within your organization. With a robust background spanning over four years of engineering experience across top-tier financial institutions—including Crédit Agricole CIB, Barclays, and HSBC—combined with a Master of Science in Financial Engineering from WorldQuant University, I bring a unique dual expertise in rigorous software architecture and complex financial markets.
 
-%----------------------------------------------------------------------------------------
-%   LETTER BODY
-%   Paragraphs will have vertical space between them due to 'parskip'.
-%   No indentation needed. Font size is now 11pt.
-%----------------------------------------------------------------------------------------
-I am writing to express my keen interest in the Software Engineer position, leveraging my 4+ years of specialized experience in designing, developing, and optimizing high-performance software solutions within the demanding financial sector. My background in Front Office IT—spanning Credit Trading functional support, Equities Derivatives, and low-latency electronic trading systems—combined with technical expertise in Python, AI-driven workflows, and trading protocols like FIX and ION, aligns directly with the challenges and opportunities within your team.
+Throughout my career, I have specialized in building, optimizing, and supporting mission-critical trading infrastructure and quantitative systems. In my recent role at Crédit Agricole CIB's Credit Trading Desk, I leverage AI-driven automation, LLM tooling, and the ION platform to deliver high-performance pretrade functional support, resolving critical risk validation issues and minimizing downtime during high-volume trading sessions. Previously at Barclays, I engineered event-driven microservices in Python for electronic trading platforms, maintained complex low-latency FIX protocol interfaces for order and execution management, and automated real-time quote pricing workflows. 
 
-My technical foundation spans hands-on software engineering, quantitative systems development, and front-office desk support. In my current role at Crédit Agricole CIB (Credit Trading Desk), I leverage AI-driven automation and LLM diagnostic tools to optimize pretrade support workflows, significantly accelerating incident resolution times and root-cause analysis across complex trade lifecycles. Previously at Barclays (Equities Derivatives FO IT), I engineered event-driven microservices to expand OMS/EMS capabilities, leveraging AI coding agents to accelerate code generation, automated testing, and release cycles, while maintaining critical FIX protocol interfaces and real-time pricing systems. Earlier at HSBC (Market Treasury IT), I engineered ETL data pipelines that reduced processing runtimes and built interactive web dashboards to assist front-office monitoring of Banking Book NPV/NII, while my quantitative experience at NineBarrack focused on backtesting trading strategies and algorithmic execution bots.
+My technical foundations were further reinforced at HSBC, where I developed high-throughput ETL pipelines using Python (Pandas/NumPy) to support Banking Book analytics, and during my tenure as a Quant Developer at NineBarrack, where I built quantitative backtesting frameworks, interactive dashboards (Flask/React), and automated trading bots backed by robust AWS cloud infrastructure. 
 
-Complementing my practical experience, my BBA in Information Systems \& Computer Science (Second Class Honors, Upper Division / 2:1) from The University of Hong Kong and my current pursuit of an MSc in Financial Engineering from WorldQuant University underscore my commitment to bridging quantitative finance concepts with robust software engineering practices. I possess a comprehensive understanding of diverse asset classes (Equities, FICC, Derivatives) and excel at translating complex quantitative logic into scalable, reliable production code. My proficiency extends across Python, C++, SQL, CI/CD pipelines (TeamCity, Jenkins, Git), and cloud environments (AWS EC2), enabling rapid, high-quality development cycles.
+What distinguishes my approach is my ability to bridge the gap between technical execution and business requirements. Whether designing low-latency event-driven microservices, implementing pre-trade risk controls, or applying data-driven automation to front-office workflows, I am committed to writing clean, scalable code that drives operational efficiency. Furthermore, my academic pursuit in Financial Engineering ensures that I possess deep domain knowledge across equities derivatives, FICC, and algorithmic execution strategies.
 
-I am confident that my experience in financial technology, particularly with AI tooling, electronic trading platforms (FIX, ION), Python-based financial data processing, and front-office desk support, will enable me to contribute immediate value to your organization. My resume provides further detail on my achievements and technical stack. Thank you for your time and consideration; I look forward to discussing how my background aligns with your team’s objectives.
+I am eager to bring my technical proficiency, quantitative mindset, and proactive problem-solving abilities to your engineering and trading operations teams. Thank you for your time and consideration. I look forward to the possibility of discussing how my background aligns with your upcoming technical initiatives.
 
-%----------------------------------------------------------------------------------------
-%   CLOSING
-%----------------------------------------------------------------------------------------
-\medskip % Add a little space before the closing
-Sincerely,
+\vspace{3ex}
 
-\vspace{1\baselineskip} % Space for signature (adjust height as needed)
+\noindent
+Sincerely,\\[1.5ex]
+\textbf{Man Yan CHAN}
 
-%----------------------------------------------------------------------------------------
-%   SIGNATURE NAME
-%----------------------------------------------------------------------------------------
-Man Yan Chan % \noindent is not needed here due to parskip
-
-%----------------------------------------------------------------------------------------
-%   DOCUMENT END
-%----------------------------------------------------------------------------------------
 \end{document}
